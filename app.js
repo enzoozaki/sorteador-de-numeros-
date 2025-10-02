@@ -7,6 +7,11 @@ function sortear() {
         alert ('O resultado não pode ser executado, coloque um número que seja maior em  "Até o número", do que "Do número" por favor altere!');
         return;
     }
+   
+    if (quantidade > (ate - de + 1)) {
+    alert('A quantidade deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número".');
+    return;
+  }
 
    let sorteados = [];
    let numero;  
@@ -16,6 +21,7 @@ function sortear() {
     
     while(sorteados.includes(numero)) {
         numero = obterNumeroAleatorio(de, ate);
+        alert ('A quantidade de números é incompativel com os números informados')
     }
     
     sorteados.push(numero);
