@@ -21,7 +21,7 @@ function sortear() {
     
     while(sorteados.includes(numero)) {
         numero = obterNumeroAleatorio(de, ate);
-        alert ('A quantidade de números é incompativel com os números informados')
+       
     }
     
     sorteados.push(numero);
